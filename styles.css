@@ -416,3 +416,125 @@ footer{padding:42px 0}
   .lapina-expansion-gallery{grid-template-columns:1fr;grid-template-rows:repeat(7,220px)}
   .lapina-expansion-photo.one,.lapina-expansion-photo.six,.lapina-expansion-photo.seven{grid-column:auto}
 }
+
+/* INVESTMENT HOMEPAGE V2 */
+.home-investment{
+  --navy:#0d2a3b;
+  --navy-2:#133447;
+  --navy-3:#0a2230;
+  --gold:#ae8b4a;
+  --cream:#f5f0e6;
+  --cream-2:#ece4d4;
+  background:var(--cream);
+}
+.home-investment .investment-header{background:rgba(246,242,234,.98)}
+.home-investment .brand{color:var(--navy)}
+.home-investment .nav-links{gap:18px}
+.home-investment .nav-links a{color:var(--navy)}
+.nav-investor{
+  background:var(--gold);
+  color:#fff!important;
+  padding:12px 16px;
+  letter-spacing:.12em;
+}
+.invest-hero{
+  min-height:680px;
+  position:relative;
+  background:url("images/lapina-rooftop-sunset.png") center 42%/cover no-repeat;
+  display:flex;
+  align-items:center;
+}
+.invest-hero-overlay{
+  position:absolute;inset:0;
+  background:linear-gradient(90deg,rgba(7,27,40,.96) 0%,rgba(7,27,40,.90) 36%,rgba(7,27,40,.30) 68%,rgba(7,27,40,.08) 100%);
+}
+.invest-hero-content{position:relative;z-index:1;width:min(92%,1180px);display:flex;justify-content:space-between;align-items:flex-end}
+.hero-copy-panel{max-width:650px;color:#fff;padding:94px 0}
+.hero-copy-panel h1{font-size:clamp(3.1rem,5.8vw,5.8rem);max-width:720px}
+.hero-sub{font-family:Georgia,serif;font-size:1.25rem;margin:22px 0 8px}
+.hero-body{max-width:620px;color:rgba(255,255,255,.88);font-size:1.05rem}
+.gold{color:var(--gold)!important}
+.gold-button{background:var(--gold)!important;color:#fff!important;border-color:var(--gold)!important}
+.outline-light{color:#fff;border-color:rgba(255,255,255,.8)}
+.hero-location{color:#fff;text-transform:uppercase;letter-spacing:.12em;font-size:.72rem;text-align:right;padding-bottom:32px;text-shadow:0 2px 8px rgba(0,0,0,.45)}
+.hero-location span{opacity:.75}
+.credibility-strip{background:var(--cream);border-bottom:1px solid #d7cdbd}
+.credibility-grid{display:grid;grid-template-columns:repeat(4,1fr)}
+.credibility-item{padding:28px 26px;text-align:center;border-right:1px solid #d7cdbd;min-height:142px}
+.credibility-item:last-child{border-right:0}
+.credibility-item strong{display:block;font:400 2.4rem/1 Georgia,serif;color:var(--navy);margin-bottom:10px}
+.credibility-item span{display:block;text-transform:uppercase;letter-spacing:.11em;font-size:.72rem;font-weight:700;color:var(--navy)}
+.credibility-item small{display:block;margin-top:8px;color:#5f655f;line-height:1.35}
+.credibility-icon{font-size:1.9rem;color:var(--gold);margin-bottom:8px}
+.featured-dark{background:var(--navy);color:#fff;position:relative;overflow:hidden}
+.featured-dark:before{content:"";position:absolute;inset:0;opacity:.08;background-image:linear-gradient(45deg,transparent 48%,rgba(255,255,255,.5) 49%,rgba(255,255,255,.5) 51%,transparent 52%);background-size:46px 46px}
+.featured-dark .container{position:relative;z-index:1}
+.featured-head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:34px}
+.featured-head h2{color:#fff}
+.text-link-light{color:#fff;text-transform:uppercase;letter-spacing:.12em;font-size:.72rem;border-bottom:1px solid rgba(255,255,255,.45);padding-bottom:7px}
+.project-card-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:16px}
+.investment-project-card{display:block;color:#fff}
+.project-thumb{height:180px;background-size:cover;background-position:center;margin-bottom:16px;border:1px solid rgba(255,255,255,.12)}
+.p-lapina{background-image:url("images/lapina-expansion-4.png"),url("images/lapina-rooftop-sunset.png")}
+.p-aguadilla{background-image:url("images/aguadilla-property.png")}
+.p-shadow{background-image:url("images/shadow-canyon-home.jpg")}
+.p-morro{background-image:url("images/morro-bay-1.png")}
+.p-bakersfield{background-image:url("images/bakersfield-courtyard.png")}
+.investment-project-card h3{font-size:1.2rem;margin-bottom:8px}
+.investment-project-card p{font-size:.9rem;color:rgba(255,255,255,.73);line-height:1.45;min-height:78px}
+.investment-project-card span{font-size:.66rem;text-transform:uppercase;letter-spacing:.12em;color:#d8b76e}
+.opportunity-section{background:#f8f4eb}
+.opportunity-layout{display:grid;grid-template-columns:.88fr 1.12fr;gap:44px;align-items:center}
+.opportunity-copy h2{color:var(--navy)}
+.opportunity-copy p{color:#5e645f}
+.opportunity-cards{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.op-card{min-height:320px;position:relative;background-size:cover;background-position:center;display:flex;align-items:end;overflow:hidden}
+.op-card:before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 42%,rgba(7,27,40,.9))}
+.op-card div{position:relative;z-index:1;padding:20px;color:#fff}
+.op-card strong{display:block;font:400 1.25rem Georgia,serif;margin-bottom:4px}
+.op-card span{font-size:.8rem;opacity:.85}
+.op-lapina{background-image:url("images/lapina-expansion-6.png"),url("images/lapina-rooftop-sunset.png")}
+.op-aguadilla{background-image:url("images/aguadilla-property.png")}
+.investment-approach{background:#efe7d9}
+.center-head{text-align:center;margin-bottom:42px}
+.center-head h2{color:var(--navy)}
+.approach-grid{display:grid;grid-template-columns:repeat(4,1fr)}
+.approach-item{text-align:center;padding:12px 26px;border-right:1px solid #cfc3b2}
+.approach-item:last-child{border-right:0}
+.approach-icon{font-size:2rem;color:var(--gold);margin-bottom:12px}
+.approach-item h3{font-size:1.2rem;color:var(--navy)}
+.approach-item p{font-size:.92rem;color:#62655f}
+.investor-cta{
+  position:relative;color:#fff;padding:80px 0;
+  background:
+    linear-gradient(90deg,rgba(5,27,41,.96),rgba(5,27,41,.82)),
+    url("images/lapina-expansion-6.png") center 44%/cover no-repeat;
+}
+.investor-cta-inner{display:grid;grid-template-columns:1.35fr .65fr;gap:60px;align-items:center}
+.investor-cta h2{color:#fff;max-width:760px}
+.investor-cta p{color:rgba(255,255,255,.82);max-width:700px}
+.investor-quote{font:italic 1.6rem/1.35 Georgia,serif;border-left:1px solid rgba(255,255,255,.4);padding-left:28px}
+.investor-quote small{display:block;font:700 .68rem Arial,sans-serif;text-transform:uppercase;letter-spacing:.12em;margin-top:22px;color:#d8b76e}
+.dark-footer{background:#081e2b;color:#fff}
+.dark-footer .footer-meta{color:rgba(255,255,255,.66)}
+@media(max-width:1000px){
+  .project-card-grid{grid-template-columns:repeat(2,1fr)}
+  .opportunity-layout,.investor-cta-inner{grid-template-columns:1fr}
+  .credibility-grid{grid-template-columns:repeat(2,1fr)}
+  .credibility-item:nth-child(2){border-right:0}
+  .credibility-item:nth-child(-n+2){border-bottom:1px solid #d7cdbd}
+  .approach-grid{grid-template-columns:repeat(2,1fr)}
+  .approach-item:nth-child(2){border-right:0}
+}
+@media(max-width:700px){
+  .invest-hero{min-height:640px;background-position:62% center}
+  .invest-hero-overlay{background:rgba(7,27,40,.84)}
+  .invest-hero-content{display:block}
+  .hero-copy-panel{padding:74px 0 50px}
+  .hero-location{display:none}
+  .credibility-grid,.project-card-grid,.opportunity-cards,.approach-grid{grid-template-columns:1fr}
+  .credibility-item,.credibility-item:nth-child(2),.approach-item{border-right:0;border-bottom:1px solid #d7cdbd}
+  .featured-head{align-items:flex-start;flex-direction:column}
+  .investment-project-card p{min-height:0}
+  .op-card{min-height:260px}
+}
