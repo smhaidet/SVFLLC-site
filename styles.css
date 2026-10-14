@@ -229,3 +229,28 @@ footer{padding:42px 0}
   .chicago-gallery{grid-template-columns:1fr;grid-template-rows:repeat(3,220px)}
   .chicago-photo.one{grid-column:auto}
 }
+
+.cda-gallery{
+  display:grid;
+  grid-template-columns:1.25fr 1fr;
+  grid-template-rows:230px 230px;
+  gap:12px;
+  margin-top:34px;
+}
+.cda-photo{
+  background-color:#d8d1c6;
+  background-size:cover;
+  background-position:center;
+}
+.cda-photo.one{grid-row:1 / span 2;background-image:url("images/coeurdalene-land-1.png")}
+.cda-photo.two{background-image:url("images/coeurdalene-land-2.png")}
+.cda-photo.three{background-image:url("images/coeurdalene-land-3.png")}
+.cda-photo.four{background-image:url("images/coeurdalene-land-4.png")}
+@media(max-width:900px){
+  .cda-gallery{grid-template-columns:1fr 1fr;grid-template-rows:280px 220px 220px}
+  .cda-photo.one{grid-column:1/-1;grid-row:auto}
+}
+@media(max-width:560px){
+  .cda-gallery{grid-template-columns:1fr;grid-template-rows:repeat(4,220px)}
+  .cda-photo.one{grid-column:auto}
+}
