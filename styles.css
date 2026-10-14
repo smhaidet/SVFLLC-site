@@ -605,3 +605,42 @@ footer{padding:42px 0}
 .text-thumb{font:400 1.55rem/1.2 Georgia,serif;color:#fff;text-align:center;letter-spacing:.02em}
 .text-thumb small{display:block;font:700 .62rem Arial,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#d8b76e;margin-top:9px}
 @media(max-width:1100px){.project-card-grid{grid-template-columns:repeat(3,1fr)}}
+
+/* CONTACT PAGE V2 */
+.contact-page{background:#f4efe5}
+.contact-shell{padding:44px 0 56px;background:linear-gradient(90deg,#102f41 0%,#102f41 38%,#f4efe5 38%,#f4efe5 100%)}
+.contact-layout{display:grid;grid-template-columns:.82fr 1.18fr;min-height:610px;box-shadow:0 22px 60px rgba(10,30,43,.12)}
+.contact-intro{background:#102f41;color:#fff;padding:52px 46px;display:flex;flex-direction:column;justify-content:center}
+.contact-intro h1{font-size:clamp(2.8rem,4.8vw,4.8rem);color:#fff;margin-top:10px}
+.contact-intro>p{color:rgba(255,255,255,.78);font-size:1.02rem;max-width:480px}
+.contact-priority{display:grid;gap:0;margin:28px 0 30px;border-top:1px solid rgba(255,255,255,.18)}
+.contact-priority span{padding:11px 0;border-bottom:1px solid rgba(255,255,255,.12);font-size:.74rem;letter-spacing:.1em;text-transform:uppercase;color:#eee2cc}
+.contact-address{margin-top:auto;padding-top:22px}
+.contact-address p{color:rgba(255,255,255,.82);margin:8px 0 0}
+.contact-form-panel{background:#fff;padding:42px 44px}
+.form-heading{margin-bottom:26px}
+.form-heading h2{font-size:clamp(1.9rem,3.1vw,3rem);color:#102f41;margin-top:6px}
+.form-heading p{margin:10px 0 0;color:var(--muted)}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.form-field{display:flex;flex-direction:column;gap:7px}
+.form-field.full{grid-column:1/-1}
+.form-field label{font-size:.7rem;letter-spacing:.11em;text-transform:uppercase;color:#59615d;font-weight:700}
+.form-field input,.form-field select,.form-field textarea{width:100%;padding:13px 14px;border:1px solid #cec8bd;background:#fff;color:var(--ink);font:inherit;border-radius:0}
+.form-field input:focus,.form-field select:focus,.form-field textarea:focus{outline:1px solid #ae8b4a;border-color:#ae8b4a}
+.form-field textarea{min-height:120px;resize:vertical}
+.contact-page .form-actions{display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin-top:20px}
+.contact-page .form-note{font-size:.78rem;color:var(--muted)}
+.contact-page .button.primary{background:#102f41}
+.contact-legal{padding:28px 0 34px;background:#f4efe5}
+.contact-legal p{font-size:.78rem;color:#777b77;max-width:980px;margin:6px 0}
+@media(max-width:900px){
+  .contact-shell{padding:24px 0 40px;background:#f4efe5}
+  .contact-layout{grid-template-columns:1fr;box-shadow:none}
+  .contact-intro{padding:38px 28px}
+  .contact-address{margin-top:24px}
+  .contact-form-panel{padding:32px 28px}
+}
+@media(max-width:620px){
+  .form-grid{grid-template-columns:1fr}
+  .form-field.full{grid-column:auto}
+}
