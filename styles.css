@@ -352,8 +352,11 @@ footer{padding:42px 0}
   grid-template-columns:1.25fr 1fr 1fr;
   grid-template-rows:220px 220px 220px;
   gap:12px;
-  margin-top:-54px;
+  margin-top:34px;
   margin-bottom:92px;
+  clear:both;
+  position:relative;
+  z-index:1;
 }
 .lapina-active-photo{
   background-color:#d8d1c6;
@@ -368,7 +371,7 @@ footer{padding:42px 0}
 .lapina-active-photo.six{grid-column:2 / span 2;background-image:url("images/lapina-expansion-6.png")}
 .lapina-active-photo.seven{grid-column:1 / span 1;background-image:url("images/lapina-expansion-7.png")}
 @media(max-width:900px){
-  .lapina-active-gallery{grid-template-columns:1fr 1fr;grid-template-rows:280px repeat(3,220px);margin-top:-40px}
+  .lapina-active-gallery{grid-template-columns:1fr 1fr;grid-template-rows:280px repeat(3,220px);margin-top:28px}
   .lapina-active-photo.one{grid-column:1/-1;grid-row:auto}
   .lapina-active-photo.six{grid-column:auto}
   .lapina-active-photo.seven{grid-column:auto}
