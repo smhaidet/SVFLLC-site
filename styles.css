@@ -254,3 +254,30 @@ footer{padding:42px 0}
   .cda-gallery{grid-template-columns:1fr;grid-template-rows:repeat(4,220px)}
   .cda-photo.one{grid-column:auto}
 }
+
+.farmhouse-gallery{
+  display:grid;
+  grid-template-columns:1.25fr 1fr 1fr;
+  grid-template-rows:220px 220px;
+  gap:12px;
+  margin:34px 0 0;
+}
+.farmhouse-photo{
+  background-color:#d8d1c6;
+  background-size:cover;
+  background-position:center;
+}
+.farmhouse-photo.one{grid-row:1 / span 2;background-image:url("images/idaho-farmhouse-1.png")}
+.farmhouse-photo.two{background-image:url("images/idaho-farmhouse-2.png")}
+.farmhouse-photo.three{background-image:url("images/idaho-farmhouse-3.png")}
+.farmhouse-photo.four{background-image:url("images/idaho-farmhouse-4.png")}
+.farmhouse-photo.five{background-image:url("images/idaho-farmhouse-5.png")}
+.farmhouse-photo.six{background-image:url("images/idaho-farmhouse-6.png")}
+@media(max-width:900px){
+  .farmhouse-gallery{grid-template-columns:1fr 1fr;grid-template-rows:280px 220px 220px 220px}
+  .farmhouse-photo.one{grid-column:1/-1;grid-row:auto}
+}
+@media(max-width:560px){
+  .farmhouse-gallery{grid-template-columns:1fr;grid-template-rows:repeat(6,220px)}
+  .farmhouse-photo.one{grid-column:auto}
+}
