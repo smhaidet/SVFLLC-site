@@ -336,12 +336,13 @@ footer{padding:42px 0}
 
 .templeton-gallery{margin:34px 0 0}
 .templeton-photo{
-  min-height:420px;
-  background-color:#d8d1c6;
+  min-height:520px;
+  background-color:#f7f5f0;
   background-image:url("images/templeton-mixed-use-2003.png");
-  background-size:cover;
+  background-size:contain;
+  background-repeat:no-repeat;
   background-position:center;
 }
 @media(max-width:560px){
-  .templeton-photo{min-height:260px}
+  .templeton-photo{min-height:360px}
 }
