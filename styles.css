@@ -295,3 +295,29 @@ footer{padding:42px 0}
 @media(max-width:560px){
   .taft-photo{min-height:260px}
 }
+
+.morro-gallery{
+  display:grid;
+  grid-template-columns:1.2fr 1fr 1fr;
+  grid-template-rows:220px 220px;
+  gap:12px;
+  margin:34px 0 0;
+}
+.morro-photo{
+  background-color:#d8d1c6;
+  background-size:cover;
+  background-position:center;
+}
+.morro-photo.one{grid-row:1 / span 2;background-image:url("images/morro-bay-1.png")}
+.morro-photo.two{background-image:url("images/morro-bay-2.png")}
+.morro-photo.three{background-image:url("images/morro-bay-3.png")}
+.morro-photo.four{background-image:url("images/morro-bay-4.png")}
+.morro-photo.five{background-image:url("images/morro-bay-5.png")}
+@media(max-width:900px){
+  .morro-gallery{grid-template-columns:1fr 1fr;grid-template-rows:280px 220px 220px}
+  .morro-photo.one{grid-column:1/-1;grid-row:auto}
+}
+@media(max-width:560px){
+  .morro-gallery{grid-template-columns:1fr;grid-template-rows:repeat(5,220px)}
+  .morro-photo.one{grid-column:auto}
+}
