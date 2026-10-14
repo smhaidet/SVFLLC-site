@@ -767,3 +767,30 @@ footer{padding:42px 0}
   .page-hero::before{inset:0 0 0 35%;opacity:.35}
   .page-hero::after{width:130px;height:130px;right:-28px;top:28%;opacity:.65}
 }
+
+/* HEADER BRAND EMBLEM */
+.brand-lockup{
+  display:inline-flex;
+  align-items:center;
+  gap:12px;
+  min-width:0;
+}
+.brand-emblem{
+  width:52px;
+  height:52px;
+  object-fit:contain;
+  flex:0 0 auto;
+}
+.brand-text{
+  display:block;
+  line-height:1.08;
+}
+.brand-text small{
+  display:block;
+  margin-top:4px;
+}
+@media(max-width:760px){
+  .brand-emblem{width:44px;height:44px}
+  .brand-text{font-size:1.05rem}
+  .brand-text small{font-size:.6rem}
+}
