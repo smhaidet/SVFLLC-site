@@ -472,7 +472,7 @@ footer{padding:42px 0}
 .featured-head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:34px}
 .featured-head h2{color:#fff}
 .text-link-light{color:#fff;text-transform:uppercase;letter-spacing:.12em;font-size:.72rem;border-bottom:1px solid rgba(255,255,255,.45);padding-bottom:7px}
-.project-card-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:16px}
+.project-card-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px 18px}
 .investment-project-card{display:block;color:#fff}
 .project-thumb{height:180px;background-size:cover;background-position:center;margin-bottom:16px;border:1px solid rgba(255,255,255,.12)}
 .p-lapina{background-image:url("images/lapina-expansion-4.png"),url("images/lapina-rooftop-sunset.png")}
@@ -587,3 +587,18 @@ footer{padding:42px 0}
   .trackrecord-band-inner,.summary-grid,.capital-principles,.outcome-grid,.verification-grid{grid-template-columns:1fr}
   .summary-card{border-right:0;border-bottom:1px solid #d0c2ad}
 }
+
+.portfolio-intro{color:rgba(255,255,255,.68);max-width:760px;margin:-18px 0 30px}
+.all-projects .investment-project-card{padding-bottom:8px}
+.all-projects .investment-project-card p{min-height:88px}
+.p-farmhouse{background-image:url("images/idaho-farmhouse-1.png")}
+.p-chicago{background-image:url("images/chicago-residential-1.png")}
+.p-cda{background-image:url("images/coeurdalene-land-1.png")}
+.p-slo-land{background-image:url("images/slo-land-control-2004.png")}
+.p-templeton{background-image:url("images/templeton-mixed-use-2003.png");background-size:contain!important;background-repeat:no-repeat;background-color:#d7d2c7}
+.p-taft{background-image:url("images/taft-triplex.png")}
+.p-slo-homes{background-image:url("images/slo-residential-1.png")}
+.p-losos{background:linear-gradient(145deg,#18384a,#0b2534);display:flex;align-items:center;justify-content:center}
+.text-thumb{font:400 1.55rem/1.2 Georgia,serif;color:#fff;text-align:center;letter-spacing:.02em}
+.text-thumb small{display:block;font:700 .62rem Arial,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#d8b76e;margin-top:9px}
+@media(max-width:1100px){.project-card-grid{grid-template-columns:repeat(3,1fr)}}
