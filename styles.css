@@ -133,28 +133,12 @@ footer{padding:42px 0}
 .footer-row{display:flex;justify-content:space-between;gap:30px;align-items:flex-end}
 .footer-meta{font-size:.78rem;color:var(--muted)}
 .kicker{font-family:Georgia,serif;font-size:1.35rem}
-@media(max-width:900px){
-  .hero{grid-template-columns:1fr}.hero-copy{padding:74px 4vw}.hero-art{min-height:380px}
-  .section-head,.project-feature,.project-block,.contact-box{grid-template-columns:1fr;gap:28px}
-  .grid-3{grid-template-columns:1fr}.grid-2{grid-template-columns:1fr}
-  .process{grid-template-columns:repeat(2,1fr)}
-  .timeline-item{grid-template-columns:1fr;gap:6px}
-  .project-gallery{grid-template-columns:1fr 1fr;grid-template-rows:300px 200px}
-  .gallery-photo.aerial{grid-column:1/-1;grid-row:auto}
-  .nav-links{display:none;position:absolute;top:76px;left:0;right:0;background:var(--paper);padding:18px 4vw;border-bottom:1px solid var(--line);flex-direction:column;align-items:flex-start}
-  .nav-links.open{display:flex}.menu-button{display:block}
-}
-@media(max-width:560px){
-  h1{font-size:2.7rem}.hero h1{font-size:2.55rem}.section{padding:70px 0}.process{grid-template-columns:1fr}.stat-row{grid-template-columns:1fr}
-  .project-gallery{grid-template-columns:1fr;grid-template-rows:240px 200px 200px}
-  .gallery-photo.aerial{grid-column:auto}
-  .footer-row{align-items:flex-start;flex-direction:column}
-}
 .shadow-gallery{
   display:grid;
   grid-template-columns:1.2fr 1fr;
   grid-template-rows:220px 220px;
   gap:12px;
+  margin-top:34px;
 }
 .shadow-photo{
   background-color:#d8d1c6;
@@ -164,11 +148,35 @@ footer{padding:42px 0}
 .shadow-photo.map{grid-row:1 / span 2;background-image:url("images/shadow-canyon-map.jpg")}
 .shadow-photo.home{background-image:url("images/shadow-canyon-home.jpg")}
 .shadow-photo.poolhome{background-image:url("images/shadow-canyon-pool-home.jpg")}
+.bakersfield-gallery{
+  display:grid;
+  grid-template-columns:1.15fr 1fr;
+  grid-template-rows:235px 235px;
+  gap:12px;
+  margin-top:34px;
+}
+.bakersfield-photo{
+  background-color:#d8d1c6;
+  background-size:cover;
+  background-position:center;
+}
+.bakersfield-photo.courtyard{grid-row:1 / span 2;background-image:url("images/bakersfield-courtyard.png")}
+.bakersfield-photo.entry{background-image:url("images/bakersfield-entry.png")}
+.bakersfield-photo.interior{background-image:url("images/bakersfield-interior-1.png")}
 @media(max-width:900px){
-  .shadow-gallery{grid-template-columns:1fr 1fr;grid-template-rows:300px 200px}
-  .shadow-photo.map{grid-column:1/-1;grid-row:auto}
+  .hero{grid-template-columns:1fr}.hero-copy{padding:74px 4vw}.hero-art{min-height:380px}
+  .section-head,.project-feature,.project-block,.contact-box{grid-template-columns:1fr;gap:28px}
+  .grid-3{grid-template-columns:1fr}.grid-2{grid-template-columns:1fr}
+  .process{grid-template-columns:repeat(2,1fr)}
+  .timeline-item{grid-template-columns:1fr;gap:6px}
+  .project-gallery,.shadow-gallery,.bakersfield-gallery{grid-template-columns:1fr 1fr;grid-template-rows:300px 200px}
+  .gallery-photo.aerial,.shadow-photo.map,.bakersfield-photo.courtyard{grid-column:1/-1;grid-row:auto}
+  .nav-links{display:none;position:absolute;top:76px;left:0;right:0;background:var(--paper);padding:18px 4vw;border-bottom:1px solid var(--line);flex-direction:column;align-items:flex-start}
+  .nav-links.open{display:flex}.menu-button{display:block}
 }
 @media(max-width:560px){
-  .shadow-gallery{grid-template-columns:1fr;grid-template-rows:240px 200px 200px}
-  .shadow-photo.map{grid-column:auto}
+  h1{font-size:2.7rem}.hero h1{font-size:2.55rem}.section{padding:70px 0}.process{grid-template-columns:1fr}.stat-row{grid-template-columns:1fr}
+  .project-gallery,.shadow-gallery,.bakersfield-gallery{grid-template-columns:1fr;grid-template-rows:240px 200px 200px}
+  .gallery-photo.aerial,.shadow-photo.map,.bakersfield-photo.courtyard{grid-column:auto}
+  .footer-row{align-items:flex-start;flex-direction:column}
 }
