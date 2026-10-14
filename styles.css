@@ -387,3 +387,32 @@ footer{padding:42px 0}
   background-position:center;
   background-color:#d8d1c6;
 }
+
+.lapina-expansion-gallery{
+  display:grid;
+  grid-template-columns:1.2fr 1fr 1fr;
+  grid-template-rows:220px 220px 220px;
+  gap:12px;
+  margin:34px 0 0;
+}
+.lapina-expansion-photo{
+  background-color:#d8d1c6;
+  background-size:cover;
+  background-position:center;
+}
+.lapina-expansion-photo.one{grid-row:1 / span 2;background-image:url("images/lapina-expansion-1.png")}
+.lapina-expansion-photo.two{background-image:url("images/lapina-expansion-2.png")}
+.lapina-expansion-photo.three{background-image:url("images/lapina-expansion-3.png")}
+.lapina-expansion-photo.four{background-image:url("images/lapina-expansion-4.png")}
+.lapina-expansion-photo.five{background-image:url("images/lapina-expansion-5.png")}
+.lapina-expansion-photo.six{grid-column:2 / span 2;background-image:url("images/lapina-expansion-6.png")}
+.lapina-expansion-photo.seven{grid-column:1 / -1;background-image:url("images/lapina-expansion-7.png")}
+@media(max-width:900px){
+  .lapina-expansion-gallery{grid-template-columns:1fr 1fr;grid-template-rows:280px 220px 220px 220px}
+  .lapina-expansion-photo.one{grid-column:1/-1;grid-row:auto}
+  .lapina-expansion-photo.six,.lapina-expansion-photo.seven{grid-column:auto}
+}
+@media(max-width:560px){
+  .lapina-expansion-gallery{grid-template-columns:1fr;grid-template-rows:repeat(7,220px)}
+  .lapina-expansion-photo.one,.lapina-expansion-photo.six,.lapina-expansion-photo.seven{grid-column:auto}
+}
