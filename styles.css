@@ -652,3 +652,37 @@ footer{padding:42px 0}
   color:#767b75;
   letter-spacing:.03em;
 }
+
+/* HEADER ALIGNMENT REFINEMENT */
+.home-investment .nav{
+  min-height:82px;
+  align-items:center;
+  gap:20px;
+}
+.home-investment .brand{
+  flex:0 0 auto;
+  line-height:1.08;
+}
+.home-investment .nav-links{
+  display:flex;
+  align-items:center;
+  justify-content:flex-end;
+  gap:16px;
+  line-height:1;
+  margin-left:auto;
+}
+.home-investment .nav-links a{
+  display:inline-flex;
+  align-items:center;
+  min-height:42px;
+  white-space:nowrap;
+  padding:0 2px;
+}
+.home-investment .nav-links .nav-investor{
+  min-height:42px;
+  padding:0 16px;
+}
+@media(max-width:1180px){
+  .home-investment .nav-links{gap:12px;font-size:.76rem;letter-spacing:.07em}
+  .home-investment .nav-links .nav-investor{padding:0 12px}
+}
