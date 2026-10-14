@@ -686,3 +686,84 @@ footer{padding:42px 0}
   .home-investment .nav-links{gap:12px;font-size:.76rem;letter-spacing:.07em}
   .home-investment .nav-links .nav-investor{padding:0 12px}
 }
+
+/* PAGE HERO REFINEMENT */
+.page-hero{
+  position:relative;
+  overflow:hidden;
+  background:
+    linear-gradient(110deg,rgba(16,47,65,.055) 0%,rgba(16,47,65,.018) 46%,rgba(174,139,74,.07) 100%),
+    #f7f5f0;
+  border-top:3px solid #b08c48;
+  border-bottom:1px solid #d9d2c5;
+}
+.page-hero::before{
+  content:"";
+  position:absolute;
+  inset:0 0 0 58%;
+  background:
+    linear-gradient(rgba(16,47,65,.055) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(16,47,65,.055) 1px,transparent 1px);
+  background-size:44px 44px;
+  opacity:.55;
+  transform:skewX(-8deg) translateX(7%);
+  transform-origin:center;
+  pointer-events:none;
+}
+.page-hero::after{
+  content:"";
+  position:absolute;
+  width:190px;
+  height:190px;
+  right:7%;
+  top:50%;
+  transform:translateY(-50%);
+  border:1px solid rgba(174,139,74,.28);
+  border-radius:50%;
+  box-shadow:
+    0 0 0 28px rgba(174,139,74,.045),
+    0 0 0 56px rgba(16,47,65,.025);
+  pointer-events:none;
+}
+.page-hero .container{
+  position:relative;
+  z-index:1;
+}
+.page-hero .eyebrow{
+  color:#9f7b3d;
+}
+.page-hero h1{
+  color:#183546;
+  text-shadow:0 1px 0 rgba(255,255,255,.6);
+}
+.page-hero p{
+  color:#59625d;
+}
+.institutional-hero{
+  border-top:3px solid #b08c48;
+  background:
+    linear-gradient(115deg,rgba(9,32,45,.98),rgba(16,47,65,.95)),
+    #102f41;
+}
+.institutional-hero::before{
+  background:
+    linear-gradient(rgba(255,255,255,.05) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(255,255,255,.05) 1px,transparent 1px);
+  background-size:48px 48px;
+  opacity:.4;
+}
+.institutional-hero::after{
+  border-color:rgba(216,183,110,.35);
+  box-shadow:
+    0 0 0 28px rgba(216,183,110,.045),
+    0 0 0 56px rgba(255,255,255,.018);
+}
+.institutional-hero h1{
+  color:#fff;
+  text-shadow:none;
+}
+.institutional-hero p{color:rgba(255,255,255,.78)}
+@media(max-width:760px){
+  .page-hero::before{inset:0 0 0 35%;opacity:.35}
+  .page-hero::after{width:130px;height:130px;right:-28px;top:28%;opacity:.65}
+}
