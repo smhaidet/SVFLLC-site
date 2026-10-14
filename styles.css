@@ -281,3 +281,17 @@ footer{padding:42px 0}
   .farmhouse-gallery{grid-template-columns:1fr;grid-template-rows:repeat(6,220px)}
   .farmhouse-photo.one{grid-column:auto}
 }
+
+.taft-gallery{
+  margin:34px 0 0;
+}
+.taft-photo{
+  min-height:430px;
+  background-color:#d8d1c6;
+  background-image:url("images/taft-triplex.png");
+  background-size:cover;
+  background-position:center;
+}
+@media(max-width:560px){
+  .taft-photo{min-height:260px}
+}
