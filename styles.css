@@ -105,7 +105,7 @@ h3{font-size:clamp(1.45rem,2.2vw,2rem)}
   background-size:cover;
   background-position:center;
 }
-.gallery-photo.aerial{grid-row:1 / span 2;background-image:url("images/lapina-aerial.png")}
+.gallery-photo.aerial{grid-row:1 / span 2;background-image:url("images/lapina-rooftop-sunset.png")}
 .gallery-photo.bedroom{background-image:url("images/lapina-bedroom.png")}
 .gallery-photo.pool{background-image:url("images/lapina-pool.png")}
 .stat-row{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:32px}
