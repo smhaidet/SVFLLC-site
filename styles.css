@@ -321,3 +321,15 @@ footer{padding:42px 0}
   .morro-gallery{grid-template-columns:1fr;grid-template-rows:repeat(5,220px)}
   .morro-photo.one{grid-column:auto}
 }
+
+.slo-land-gallery{
+  margin:34px 0 0;
+}
+.slo-land-photo{
+  min-height:360px;
+  background:url("images/slo-land-control-2004.png") center center/cover no-repeat;
+  background-color:#d8d1c6;
+}
+@media(max-width:560px){
+  .slo-land-photo{min-height:240px}
+}
