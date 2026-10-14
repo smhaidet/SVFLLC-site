@@ -3,24 +3,87 @@
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Contact | SVF, LLC</title>
 <meta name="description" content="Contact SVF, LLC regarding Puerto Rico hospitality development, investment, lending, property opportunities and professional partnerships.">
-<link rel="stylesheet" href="styles.css"></head>
+<link rel="stylesheet" href="styles.css">
+<style>
+.form-wrap{background:#fff;border:1px solid var(--line);padding:38px}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.form-field{display:flex;flex-direction:column;gap:8px}
+.form-field.full{grid-column:1/-1}
+.form-field label{font-size:.74rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.form-field input,.form-field select,.form-field textarea{
+  width:100%;padding:14px 15px;border:1px solid var(--line);background:#fff;color:var(--ink);
+  font:inherit;border-radius:0
+}
+.form-field textarea{min-height:150px;resize:vertical}
+.form-actions{display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin-top:22px}
+.form-note{font-size:.82rem;color:var(--muted);max-width:620px}
+@media(max-width:700px){.form-grid{grid-template-columns:1fr}.form-field.full{grid-column:auto}.form-wrap{padding:24px}}
+</style>
+</head>
 <body>
 <header class="site-header"><div class="container nav"><a class="brand" href="index.html">S. Marcus Haidet<small>Founder · SVF, LLC</small></a><button class="menu-button" aria-expanded="false">Menu</button><nav class="nav-links"><a href="svf.html">SVF</a><a href="projects.html">Projects</a><a href="about.html">About Marcus</a><a href="investment.html">Investment Approach</a><a href="contact.html">Contact</a></nav></div></header>
 
 <main>
-<section class="page-hero"><div class="container"><div class="eyebrow">Contact</div><h1>Start a conversation.</h1><p>SVF welcomes conversations with property owners, lenders, qualified investors and professionals interested in hospitality development opportunities in Puerto Rico.</p></div></section>
+<section class="page-hero"><div class="container"><div class="eyebrow">Contact</div><h1>Contact SVF.</h1><p>Property owners, lenders, qualified investors and professionals interested in Puerto Rico hospitality development are welcome to get in touch.</p></div></section>
 
 <section class="section"><div class="container">
-<div class="contact-box">
-<div><div class="eyebrow">Areas of interest</div><h2>Development relationships.</h2><p>SVF is interested in thoughtful conversations around hospitality development, investment capital, lending relationships, property opportunities and professional services in Puerto Rico.</p></div>
-<div class="contact-list">
-<div class="contact-item"><strong>Investment</strong><br><span>Qualified investors and family offices</span></div>
-<div class="contact-item"><strong>Property opportunities</strong><br><span>Hospitality and redevelopment opportunities in Puerto Rico</span></div>
-<div class="contact-item"><strong>Lending & finance</strong><br><span>Banking and development-finance relationships</span></div>
-<div class="contact-item"><strong>Professional services</strong><br><span>Construction, engineering, architecture and operating partners</span></div>
+<div class="section-head">
+  <div><div class="eyebrow">Start a conversation</div><h2>Tell us how we can help.</h2></div>
+  <p>Complete the form below and include enough detail for us to understand the reason for your inquiry. SVF reviews each message directly.</p>
 </div>
+
+<div class="form-wrap">
+<form id="contact-form" action="#" method="post">
+<div class="form-grid">
+  <div class="form-field">
+    <label for="name">Full name</label>
+    <input id="name" name="name" type="text" autocomplete="name" required>
+  </div>
+
+  <div class="form-field">
+    <label for="organization">Organization / Company</label>
+    <input id="organization" name="organization" type="text" autocomplete="organization">
+  </div>
+
+  <div class="form-field">
+    <label for="email">Email</label>
+    <input id="email" name="email" type="email" autocomplete="email" required>
+  </div>
+
+  <div class="form-field">
+    <label for="phone">Phone number</label>
+    <input id="phone" name="phone" type="tel" autocomplete="tel">
+  </div>
+
+  <div class="form-field full">
+    <label for="reason">Reason for contacting SVF</label>
+    <select id="reason" name="reason" required>
+      <option value="">Select one</option>
+      <option>Investment</option>
+      <option>Property opportunity</option>
+      <option>Lending / Finance</option>
+      <option>Development partnership</option>
+      <option>Construction / Engineering / Architecture</option>
+      <option>Hospitality operations</option>
+      <option>Media / Professional inquiry</option>
+      <option>Other</option>
+    </select>
+  </div>
+
+  <div class="form-field full">
+    <label for="message">Message</label>
+    <textarea id="message" name="message" placeholder="Please tell us briefly what you would like to discuss." required></textarea>
+  </div>
 </div>
-<p class="notice"><strong>Contact method:</strong> Official SVF email will be added before public launch.</p>
+
+<div class="form-actions">
+  <button class="button primary" type="submit" disabled title="Submission service will be connected before launch">Send message</button>
+  <div class="form-note">The contact form is built and ready. We will connect the secure submission service before the site goes public so messages are delivered to the SVF inbox.</div>
+</div>
+</form>
+</div>
+
+<p class="notice">Information submitted through this form will be used only to respond to the inquiry and evaluate potential business relationships.</p>
 <p class="notice">Information presented on this website is for general informational purposes only and does not constitute an offer to sell or a solicitation to purchase securities or participate in any investment.</p>
 </div></section>
 </main>
