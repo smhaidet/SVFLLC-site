@@ -538,3 +538,52 @@ footer{padding:42px 0}
   .investment-project-card p{min-height:0}
   .op-card{min-height:260px}
 }
+
+/* TRACK RECORD */
+.trackrecord-band{background:#102f41;color:#fff}
+.trackrecord-band-inner{display:grid;grid-template-columns:1.25fr .75fr;gap:54px;align-items:center}
+.trackrecord-band h2{color:#fff}
+.trackrecord-band p{color:rgba(255,255,255,.78);max-width:760px}
+.trackrecord-band-actions{display:flex;gap:12px;justify-content:flex-end;flex-wrap:wrap}
+.institutional-hero{background:#102f41;color:#fff}
+.institutional-hero h1{color:#fff;max-width:900px}
+.institutional-hero p{color:rgba(255,255,255,.8)}
+.institutional-hero .eyebrow{color:#c4a35c}
+.institutional-hero .button{border-color:#fff;color:#fff}
+.institutional-hero .button.primary{background:#b08c48;border-color:#b08c48}
+.trackrecord-summary{padding:0;background:#efe7d9}
+.summary-grid{display:grid;grid-template-columns:repeat(4,1fr)}
+.summary-card{padding:30px 24px;border-right:1px solid #d0c2ad;text-align:center}
+.summary-card:last-child{border-right:0}
+.summary-card strong{display:block;font:400 1.75rem Georgia,serif;color:#102f41;margin-bottom:8px}
+.summary-card span{font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:#5d625f}
+.capital-principles{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:42px}
+.capital-principles>div{border-top:2px solid #102f41;padding-top:18px}
+.capital-principles span{font-size:.72rem;color:#b08c48;letter-spacing:.12em}
+.capital-principles h3{font-size:1.25rem;margin-top:6px}
+.capital-principles p{color:#666d68}
+.trackrecord-dark{background:#102f41;color:#fff}
+.trackrecord-dark h2,.trackrecord-dark h3{color:#fff}
+.outcome-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.outcome-card{border:1px solid rgba(255,255,255,.15);padding:24px;background:rgba(255,255,255,.035)}
+.outcome-card span{display:block;color:#d8b76e;text-transform:uppercase;letter-spacing:.11em;font-size:.68rem;margin-bottom:10px}
+.outcome-card h3{font-size:1.35rem;margin-bottom:14px}
+.outcome-card p{color:rgba(255,255,255,.78);font-size:.92rem;line-height:1.65}
+.trackrecord-disclaimer{color:rgba(255,255,255,.55);font-size:.78rem;margin-top:28px;max-width:980px}
+.verification-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.verification-card{border:1px solid var(--line);padding:24px;background:#fff}
+.verification-card h3{font-size:1.25rem}
+.verification-card p{color:var(--muted);font-size:.92rem}
+.faq-item{padding:0 0 22px;margin-bottom:22px;border-bottom:1px solid var(--line)}
+.faq-item:last-child{border-bottom:0}
+.faq-item h3{font-size:1.2rem;margin-bottom:8px}
+.faq-item p{margin:0;color:var(--muted)}
+@media(max-width:900px){
+  .trackrecord-band-inner,.summary-grid,.capital-principles,.outcome-grid,.verification-grid{grid-template-columns:1fr 1fr}
+  .trackrecord-band-actions{justify-content:flex-start}
+  .summary-card:nth-child(2){border-right:0}
+}
+@media(max-width:600px){
+  .trackrecord-band-inner,.summary-grid,.capital-principles,.outcome-grid,.verification-grid{grid-template-columns:1fr}
+  .summary-card{border-right:0;border-bottom:1px solid #d0c2ad}
+}
