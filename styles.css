@@ -644,3 +644,11 @@ footer{padding:42px 0}
   .form-grid{grid-template-columns:1fr}
   .form-field.full{grid-column:auto}
 }
+
+.credibility-note{
+  padding:0 0 18px;
+  text-align:center;
+  font-size:.72rem;
+  color:#767b75;
+  letter-spacing:.03em;
+}
