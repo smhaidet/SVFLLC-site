@@ -377,3 +377,13 @@ footer{padding:42px 0}
   .lapina-active-gallery{grid-template-columns:1fr;grid-template-rows:repeat(7,220px)}
   .lapina-active-photo.one,.lapina-active-photo.six,.lapina-active-photo.seven{grid-column:auto}
 }
+
+.aguadilla-active{
+  background-image:
+    linear-gradient(160deg,rgba(255,255,255,.02),rgba(0,0,0,.08)),
+    url("images/aguadilla-property.png");
+  background-size:contain;
+  background-repeat:no-repeat;
+  background-position:center;
+  background-color:#d8d1c6;
+}
