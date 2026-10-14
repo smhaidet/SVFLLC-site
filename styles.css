@@ -205,3 +205,27 @@ footer{padding:42px 0}
   .slo-gallery{grid-template-columns:1fr;grid-template-rows:repeat(5,220px)}
   .slo-photo.one{grid-column:auto}
 }
+
+.chicago-gallery{
+  display:grid;
+  grid-template-columns:1.25fr 1fr 1fr;
+  grid-template-rows:360px;
+  gap:12px;
+  margin:34px 0 0;
+}
+.chicago-photo{
+  background-color:#d8d1c6;
+  background-size:cover;
+  background-position:center;
+}
+.chicago-photo.one{background-image:url("images/chicago-residential-1.png")}
+.chicago-photo.two{background-image:url("images/chicago-residential-2.png")}
+.chicago-photo.three{background-image:url("images/chicago-residential-3.png")}
+@media(max-width:900px){
+  .chicago-gallery{grid-template-columns:1fr 1fr;grid-template-rows:280px 220px}
+  .chicago-photo.one{grid-column:1/-1}
+}
+@media(max-width:560px){
+  .chicago-gallery{grid-template-columns:1fr;grid-template-rows:repeat(3,220px)}
+  .chicago-photo.one{grid-column:auto}
+}
