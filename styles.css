@@ -832,3 +832,27 @@ footer{padding:42px 0}
   .home-investment .nav-links{gap:10px;font-size:.72rem}
   .home-investment .nav-links .nav-investor{padding:0 10px;font-size:.68rem}
 }
+
+/* WHY PUERTO RICO */
+.why-pr-section{background:#f7f5f0}
+.market-snapshot{
+  margin-top:42px;
+  border-top:3px solid #ae8b4a;
+  border-bottom:1px solid #d6cec0;
+  background:#fff;
+  padding:30px 34px 24px;
+}
+.market-snapshot-head{display:grid;grid-template-columns:.8fr 1.2fr;gap:36px;align-items:end}
+.market-snapshot-head h3{font-size:1.75rem;color:#183546;margin-top:5px}
+.market-snapshot-head p{margin:0;color:#666d68}
+.market-metrics{display:grid;grid-template-columns:repeat(3,1fr);margin-top:28px;border-top:1px solid #e1dbd0;border-bottom:1px solid #e1dbd0}
+.market-metric{padding:24px 22px;text-align:center;border-right:1px solid #e1dbd0}
+.market-metric:last-child{border-right:0}
+.market-metric strong{display:block;font:400 2rem Georgia,serif;color:#183546}
+.market-metric span{display:block;margin-top:7px;font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:#69706b}
+.market-note{font-size:.75rem;color:#7a7e79;margin:14px 0 0}
+@media(max-width:760px){
+  .market-snapshot-head,.market-metrics{grid-template-columns:1fr}
+  .market-metric{border-right:0;border-bottom:1px solid #e1dbd0}
+  .market-metric:last-child{border-bottom:0}
+}
