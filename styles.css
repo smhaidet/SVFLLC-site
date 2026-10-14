@@ -150,3 +150,25 @@ footer{padding:42px 0}
   .gallery-photo.aerial{grid-column:auto}
   .footer-row{align-items:flex-start;flex-direction:column}
 }
+.shadow-gallery{
+  display:grid;
+  grid-template-columns:1.2fr 1fr;
+  grid-template-rows:220px 220px;
+  gap:12px;
+}
+.shadow-photo{
+  background-color:#d8d1c6;
+  background-size:cover;
+  background-position:center;
+}
+.shadow-photo.map{grid-row:1 / span 2;background-image:url("images/shadow-canyon-map.jpg")}
+.shadow-photo.home{background-image:url("images/shadow-canyon-home.jpg")}
+.shadow-photo.poolhome{background-image:url("images/shadow-canyon-pool-home.jpg")}
+@media(max-width:900px){
+  .shadow-gallery{grid-template-columns:1fr 1fr;grid-template-rows:300px 200px}
+  .shadow-photo.map{grid-column:1/-1;grid-row:auto}
+}
+@media(max-width:560px){
+  .shadow-gallery{grid-template-columns:1fr;grid-template-rows:240px 200px 200px}
+  .shadow-photo.map{grid-column:auto}
+}
